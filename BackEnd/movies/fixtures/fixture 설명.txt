@@ -1,0 +1,32 @@
+movies앱의 Movie, Actor, Director, Genre, News, Actor_characters 모델에 대하여 dumpdata 한 결과 : 
+
+```
+PYTHONIOENCODING=utf-8 python manage.py dumpdata movies.Movie --indent 2 > Movie_fixture.json
+
+PYTHONIOENCODING=utf-8 python manage.py dumpdata movies.Actor --indent 2 > Actor_fixture.json
+
+PYTHONIOENCODING=utf-8 python manage.py dumpdata movies.Director --indent 2 > Director_fixture.json
+
+PYTHONIOENCODING=utf-8 python manage.py dumpdata movies.Genre --indent 2 > Genre_fixture.json
+
+PYTHONIOENCODING=utf-8 python manage.py dumpdata movies.News --indent 2 > News_fixture.json
+
+PYTHONIOENCODING=utf-8 python manage.py dumpdata movies.ActorCharacter --indent 2 >Actor_characters.json
+
+```
+
+------- 
+모델 별 레코드 수 : 
+
+
+-------
+```
+순서 엄수!!
+python manage.py loaddata Genre_fixture.json
+python manage.py loaddata Movie_fixture.json
+python manage.py loaddata Actor_fixture.json
+python manage.py loaddata Director_fixture.json
+python manage.py loaddata News_fixture
+python manage.py loaddata Actor_characters.json
+
+```
