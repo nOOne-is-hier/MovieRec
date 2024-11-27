@@ -18,12 +18,12 @@ dj-rest-auth==2.1.9
 Django==4.2.4
 django-allauth==0.51.0
 django-cors-headers==4.2.0
+django-environ==0.11.2
 django-extensions==3.2.3
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
 drf-spectacular==0.27.2
 drf-yasg==1.21.8
-environ==1.0
 exceptiongroup==1.2.2
 executing==2.1.0
 filelock==3.16.1
